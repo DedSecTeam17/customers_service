@@ -169,11 +169,11 @@ module.exports.uploadProfileImage = async (req, res, next) => {
                 const user = await User.findById(decoded_user._id);
                 if (typeof user.profile != 'undefined') {
 
-                    user.profile.profile_image_path = "https://serene-wave-76375.herokuapp.com/api/users/profile_image/" + req.file.filename.toString()
+                    user.profile.profile_image_path = "https://young-tor-63067.herokuapp.com/api/users/profile_image/" + req.file.filename.toString()
                 } else {
                     user.profile = {
                         about: '',
-                        profile_image_path: "https://serene-wave-76375.herokuapp.com/api/users/profile_image/" + req.file.filename.toString(),
+                        profile_image_path: "https://young-tor-63067.herokuapp.com/api/users/profile_image/" + req.file.filename.toString(),
                         phone_number: '',
                         job: ''
                     }
