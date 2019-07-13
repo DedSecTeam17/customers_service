@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73110fa3-4d21-48fa-a2bf-1c7838932750" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.js" afterDir="false" />
-    </list>
+    <list default="true" id="73110fa3-4d21-48fa-a2bf-1c7838932750" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="-903">
               <caret line="242" column="85" selection-start-line="242" selection-start-column="85" selection-end-line="242" selection-end-column="85" />
               <folding>
                 <element signature="e#5274#5547#0" expanded="true" />
@@ -210,12 +208,12 @@
       <workItem from="1562844426193" duration="652000" />
       <workItem from="1562846091188" duration="640000" />
       <workItem from="1562858574758" duration="76000" />
-      <workItem from="1563014928734" duration="2736000" />
+      <workItem from="1563014928734" duration="3689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11859000" />
+    <option name="totallyTimeSpent" value="12812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -238,7 +236,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.70082647" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.70082647" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -304,7 +302,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="-903">
           <caret line="242" column="85" selection-start-line="242" selection-start-column="85" selection-end-line="242" selection-end-column="85" />
           <folding>
             <element signature="e#5274#5547#0" expanded="true" />

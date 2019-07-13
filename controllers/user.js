@@ -302,13 +302,13 @@ module.exports.passwordChange = async (req, res) => {
                     sendJsonResponse(res, updatedUser, 201);
 
                 } catch (e) {
-                    return sendJsonResponse(res, {"message": "Send your email again"}, 404);
+                    return sendJsonResponse(res, {"message": "Send your email again"}, 200);
 
                 }
             });
         });
     } else {
-        return sendJsonResponse(res, {"message": "Send your email again"}, 404);
+        return sendJsonResponse(res, {"message": "Send your email again"}, 200);
     }
 
 
