@@ -227,8 +227,6 @@ module.exports.updateUser = async (req, res) => {
         sendJsonResponse(res, {'message': 'Authorization header required'}, 200);
     }
 }
-
-
 module.exports.passwordReset = async (req, res) => {
     const user_email = req.body.email;
 
@@ -241,7 +239,7 @@ module.exports.passwordReset = async (req, res) => {
             const updated_user = await User.findOneAndUpdate({email: user_email}, {
                 password_reset_token: token
             });
-            sendEmail(user_email, `http://localhost:4200/change_password?token=${token}`);
+            sendEmail(user_email, `http://localhost:8080/#/password_change?token=${token}`);
             sendJsonResponse(res, updated_user, 200);
         } else {
             sendJsonResponse(res, {"message": 'User with this email not found'}, 200);
@@ -251,18 +249,17 @@ module.exports.passwordReset = async (req, res) => {
     }
 
 }
-
 function sendEmail(email, link) {
     var transport = nodemailer.createTransport({
         service: 'gmail',
 
         auth: {
-            user: process.env.GMAIL,
-            pass: process.env.PASSWORD
+            user: "melamin23.me@gmail.com",
+            pass: "mohamed1337"
         }
     });
     let mailOptions = {
-        from: 'mohammedelamin21.me@gmail.com', // sender address
+        from: "mohamed1337", // sender address
         to: email, // list of receivers
         subject: 'Node Contact Request', // Subject line
         text: 'Hello world?', // plain text body
@@ -284,7 +281,6 @@ function sendEmail(email, link) {
 
     });
 }
-
 module.exports.passwordChange = async (req, res) => {
 
     var user = await User.findOne({password_reset_token: req.params.token})
@@ -317,7 +313,6 @@ module.exports.passwordChange = async (req, res) => {
 
 
 }
-
 module.exports.passwordUpdate = async (req, res) => {
     if (req.headers && req.headers.authorization) {
         const authorization_header = req.headers.authorization;
@@ -373,12 +368,10 @@ module.exports.passwordUpdate = async (req, res) => {
     }
 
 }
-
 function sendJsonResponse(res, data, status) {
     res.status(status);
     res.send(data);
 }
-
 async function deleteFile(path) {
     try {
         await fs.remove(path)
