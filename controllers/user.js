@@ -233,7 +233,7 @@ module.exports.passwordReset = async (req, res) => {
 
     try {
         const user = await User.findOne({email: user_email});
-        if (typeof user.email !== "undefined") {
+        if (typeof user.email != "undefined") {
             var token = randtoken.generate(16);
 
             const updated_user = await User.findOneAndUpdate({email: user_email}, {
@@ -245,7 +245,7 @@ module.exports.passwordReset = async (req, res) => {
             sendJsonResponse(res, {"message": 'User with this email not found'}, 200);
         }
     } catch (e) {
-        sendJsonResponse(res, {"message": 'User with this email not found'}, 200);
+        sendJsonResponse(res, {"message": e}, 404);
     }
 
 }
