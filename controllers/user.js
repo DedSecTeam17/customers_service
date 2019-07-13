@@ -299,16 +299,16 @@ module.exports.passwordChange = async (req, res) => {
                         password: newPassword,
                         password_reset_token: null
                     });
-                    sendJsonResponse(res, updatedUser, 201);
+                    sendJsonResponse(res, {"message": "password updated successfully"}, 201);
 
                 } catch (e) {
-                    return sendJsonResponse(res, {"message": "Send your email again"}, 200);
+                    return sendJsonResponse(res, {"message": "Send your email again"}, 400);
 
                 }
             });
         });
     } else {
-        return sendJsonResponse(res, {"message": "Send your email again"}, 200);
+        return sendJsonResponse(res, {"message": "Send your email again"}, 201);
     }
 
 
