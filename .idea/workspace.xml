@@ -40,17 +40,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-903">
-              <caret line="242" column="85" selection-start-line="242" selection-start-column="85" selection-end-line="242" selection-end-column="85" />
+            <state relative-caret-position="40">
+              <caret line="310" column="78" selection-start-line="310" selection-start-column="78" selection-end-line="310" selection-end-column="78" />
               <folding>
                 <element signature="e#5274#5547#0" expanded="true" />
+                <element signature="e#7628#8321#0" expanded="true" />
                 <element signature="e#7922#7981#0" expanded="true" />
                 <element signature="n#!!block;n#sendEmail#0" expanded="true" />
                 <element signature="e#8403#8594#0" expanded="true" />
                 <element signature="e#8444#8538#0" expanded="true" />
                 <element signature="e#8564#9132#0" expanded="true" />
                 <element signature="e#9195#9406#0" expanded="true" />
-                <element signature="e#9464#10508#0" expanded="true" />
                 <element signature="e#9652#10402#0" expanded="true" />
                 <element signature="e#9756#10390#0" expanded="true" />
               </folding>
@@ -208,16 +208,15 @@
       <workItem from="1562844426193" duration="652000" />
       <workItem from="1562846091188" duration="640000" />
       <workItem from="1562858574758" duration="76000" />
-      <workItem from="1563014928734" duration="3689000" />
+      <workItem from="1563014928734" duration="3760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12812000" />
+    <option name="totallyTimeSpent" value="12883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28971255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -302,17 +301,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-903">
-          <caret line="242" column="85" selection-start-line="242" selection-start-column="85" selection-end-line="242" selection-end-column="85" />
+        <state relative-caret-position="40">
+          <caret line="310" column="78" selection-start-line="310" selection-start-column="78" selection-end-line="310" selection-end-column="78" />
           <folding>
             <element signature="e#5274#5547#0" expanded="true" />
+            <element signature="e#7628#8321#0" expanded="true" />
             <element signature="e#7922#7981#0" expanded="true" />
             <element signature="n#!!block;n#sendEmail#0" expanded="true" />
             <element signature="e#8403#8594#0" expanded="true" />
             <element signature="e#8444#8538#0" expanded="true" />
             <element signature="e#8564#9132#0" expanded="true" />
             <element signature="e#9195#9406#0" expanded="true" />
-            <element signature="e#9464#10508#0" expanded="true" />
             <element signature="e#9652#10402#0" expanded="true" />
             <element signature="e#9756#10390#0" expanded="true" />
           </folding>
