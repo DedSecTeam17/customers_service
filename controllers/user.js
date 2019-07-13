@@ -240,7 +240,7 @@ module.exports.passwordReset = async (req, res) => {
                 password_reset_token: token
             });
             sendEmail(user_email, `http://localhost:8080/#/password_change?token=${token}`);
-            sendJsonResponse(res, updated_user, 200);
+            sendJsonResponse(res, {"message":"check your email to reset your password"}, 200);
         } else {
             sendJsonResponse(res, {"message": 'User with this email not found'}, 200);
         }
@@ -259,7 +259,7 @@ function sendEmail(email, link) {
         }
     });
     let mailOptions = {
-        from: "mohamed1337", // sender address
+        from: "melamin23.me@gmail.com", // sender address
         to: email, // list of receivers
         subject: 'Node Contact Request', // Subject line
         text: 'Hello world?', // plain text body
