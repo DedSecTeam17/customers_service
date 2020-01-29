@@ -150,6 +150,8 @@ module.exports.createProfile = async (req, res, next) => {
         sendJsonResponse(res, e, 404);
     }
 };
+
+
 module.exports.uploadProfileImage = async (req, res, next) => {
 
 
@@ -192,6 +194,8 @@ module.exports.getProfileImage = (req, res) => {
     res.status(200);
     res.sendfile('./public/uploads/profiles_images/' + req.params.image_name);
 };
+
+
 module.exports.updateUser = async (req, res) => {
     if (req.headers && req.headers.authorization) {
         const authorization_header = req.headers.authorization;
@@ -240,7 +244,7 @@ module.exports.passwordReset = async (req, res) => {
                 password_reset_token: token
             });
             sendEmail(user_email, `http://localhost:8080/#/password_change?token=${token}`);
-            sendJsonResponse(res, {"message":"check your email to reset your password"}, 200);
+            sendJsonResponse(res, {"message": "check your email to reset your password"}, 200);
         } else {
             sendJsonResponse(res, {"message": 'User with this email not found'}, 200);
         }
@@ -249,6 +253,7 @@ module.exports.passwordReset = async (req, res) => {
     }
 
 }
+
 function sendEmail(email, link) {
     var transport = nodemailer.createTransport({
         service: 'gmail',
@@ -281,6 +286,7 @@ function sendEmail(email, link) {
 
     });
 }
+
 module.exports.passwordChange = async (req, res) => {
 
     var user = await User.findOne({password_reset_token: req.params.token})
@@ -368,10 +374,12 @@ module.exports.passwordUpdate = async (req, res) => {
     }
 
 }
+
 function sendJsonResponse(res, data, status) {
     res.status(status);
     res.send(data);
 }
+
 async function deleteFile(path) {
     try {
         await fs.remove(path)
